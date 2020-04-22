@@ -31,3 +31,4 @@ build/
 .vscode/
 /src/main/java/com/copyandpaste/exam/datasets/directory-export-business-cards.xml
 /src/main/java/com/copyandpaste/exam/datasets/directory-export-business-cards.xml
+/src/main/java/com/copyandpaste/exam/datasets/directory-export-business-cards-no-doc-types.xml

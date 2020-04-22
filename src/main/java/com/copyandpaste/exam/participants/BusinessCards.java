@@ -1,13 +1,21 @@
 package com.copyandpaste.exam.participants;
 
+import java.util.List;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
 public class BusinessCards {
-	@JacksonXmlElementWrapper(localName = "businesscard", useWrapping = false)
-	private BusinessCard[] businessCard;
+	@JacksonXmlProperty(localName = "businesscard")
+	@JacksonXmlElementWrapper(useWrapping = false)
+	private List<BusinessCard> cards;
+
+	public List<BusinessCard> getCards() {
+		return cards;
+	}
+
+	public void setCards(List<BusinessCard> cards) {
+		this.cards = cards;
+	}
+
 }
