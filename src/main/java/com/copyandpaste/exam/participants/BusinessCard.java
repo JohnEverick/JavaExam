@@ -1,18 +1,36 @@
 package com.copyandpaste.exam.participants;
 
-import java.time.LocalDate;
+import java.util.List;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
+@JacksonXmlRootElement(localName = "businesscard")
 public class BusinessCard {
-	@JacksonXmlProperty(localName = "id", isAttribute = true)
-	private int icd;
-	private String businessCode;
-	private String businessName;
-	private LocalDate regDate;
+
+	private Participant participant;
+
+	@JacksonXmlProperty(localName = "entity")
+    @JacksonXmlElementWrapper(useWrapping = false)
+	private List<Entity> entities;
+
+	public Participant getParticipant() {
+		return participant;
+	}
+
+	public void setParticipant(Participant participant) {
+		this.participant = participant;
+	}
+
+	public List<Entity> getEntities() {
+		return entities;
+	}
+
+	public void setEntities(List<Entity> entities) {
+		this.entities = entities;
+	}
+
+
+
 }
