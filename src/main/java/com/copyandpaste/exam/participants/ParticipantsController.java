@@ -16,7 +16,7 @@ public class ParticipantsController {
 	ParticipantsDAO participants;
 
 	@GetMapping("/getById")
-	public BusinessCard getById(int icd, String businessCode) throws JsonParseException, JsonMappingException, IOException {
+	public BusinessCard getById(Integer icd, String businessCode) throws JsonParseException, JsonMappingException, IOException {
 		BusinessCard result = participants.getEntityById(icd, businessCode);
 		return result;
 	}
