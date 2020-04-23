@@ -1,0 +1,287 @@
+{
+	"id": "0841f096-0ff1-3ed7-61d7-88e722be933a",
+	"name": "Java Api Exam Postman Results",
+	"allTests": [],
+	"timestamp": 1587632762399,
+	"collection_id": "c07ad390-f54e-41d9-cb1c-69f8d41eb167",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": null,
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "c07ad390-f54e-41d9-cb1c-69f8d41eb167",
+		"name": "Java Api Exam Postman Results",
+		"description": "",
+		"order": [
+			"53295b78-d118-427c-01f4-34e563b55038",
+			"d031b896-9f0c-2856-2616-91b4b52dc77d",
+			"0d0199f1-c7c5-a02c-129c-f0324b93e332"
+		],
+		"folders": [],
+		"folders_order": [],
+		"requests": [
+			{
+				"id": "0d0199f1-c7c5-a02c-129c-f0324b93e332",
+				"headers": "",
+				"headerData": [],
+				"url": "localhost:8080/getByName",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "c07ad390-f54e-41d9-cb1c-69f8d41eb167",
+				"data": [
+					{
+						"key": "name",
+						"value": "Cold Storage Singapore (1983) PTE Ltd",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"name": "localhost:8080/getByName",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587632731430,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "53295b78-d118-427c-01f4-34e563b55038",
+				"headers": "",
+				"headerData": [],
+				"url": "localhost:8080/searchByName",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "c07ad390-f54e-41d9-cb1c-69f8d41eb167",
+				"data": [
+					{
+						"key": "name",
+						"value": "SINGAPORE",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"name": "localhost:8080/searchByName",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587632710743,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "d031b896-9f0c-2856-2616-91b4b52dc77d",
+				"headers": "icd: 0195\nbusinessCode: sguen196500199m\n",
+				"headerData": [
+					{
+						"key": "icd",
+						"value": "0195",
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "businessCode",
+						"value": "sguen196500199m",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "localhost:8080/getById",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "c07ad390-f54e-41d9-cb1c-69f8d41eb167",
+				"data": [
+					{
+						"key": "icd",
+						"value": "0195",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "businessCode",
+						"value": "sguen196500199m",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"name": "localhost:8080/getById",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587632720882,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			}
+		],
+		"timestamp": 1587632697136,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "6634764",
+		"subscribed": false,
+		"createdAt": 1587632697136,
+		"updatedAt": 1587632731459,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"id": "53295b78-d118-427c-01f4-34e563b55038",
+			"name": "localhost:8080/searchByName",
+			"url": "localhost:8080/searchByName",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2596
+			],
+			"allTests": [
+				{}
+			],
+			"time": 2596,
+			"totalRequestTime": 2596,
+			"iterationResults": {}
+		},
+		{
+			"id": "d031b896-9f0c-2856-2616-91b4b52dc77d",
+			"name": "localhost:8080/getById",
+			"url": "localhost:8080/getById",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1542
+			],
+			"allTests": [
+				{}
+			],
+			"time": 1542,
+			"totalRequestTime": 1542,
+			"iterationResults": {}
+		},
+		{
+			"id": "0d0199f1-c7c5-a02c-129c-f0324b93e332",
+			"name": "localhost:8080/getByName",
+			"url": "localhost:8080/getByName",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1536
+			],
+			"allTests": [
+				{}
+			],
+			"time": 1536,
+			"totalRequestTime": 1536,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 5674,
+	"lifecycle": "idle",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "localhost:8080/searchByName",
+			"id": "53295b78-d118-427c-01f4-34e563b55038",
+			"url": "localhost:8080/searchByName",
+			"time": 2596,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "localhost:8080/getById",
+			"id": "d031b896-9f0c-2856-2616-91b4b52dc77d",
+			"url": "localhost:8080/getById",
+			"time": 1542,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "localhost:8080/getByName",
+			"id": "0d0199f1-c7c5-a02c-129c-f0324b93e332",
+			"url": "localhost:8080/getByName",
+			"time": 1536,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		}
+	],
+	"synced": false
+}
