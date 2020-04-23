@@ -1,11 +1,9 @@
-package com.copyandpaste.exam.participants;
+package com.copyandpaste.exam.participants.model;
 
-public class BusinessInfoDTO {
+public class InfoOutDto {
 
 	private String name;
-
 	private String enterpriseNumber;
-
 	private String countryCode;
 
 	public String getName() {

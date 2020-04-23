@@ -1,4 +1,4 @@
-package com.copyandpaste.exam.participants;
+package com.copyandpaste.exam.participants.model;
 
 import java.util.List;
 
@@ -17,5 +17,4 @@ public class BusinessCards {
 	public void setCards(List<BusinessCard> cards) {
 		this.cards = cards;
 	}
-
 }

@@ -1,22 +1,21 @@
-package com.copyandpaste.exam.participants;
+package com.copyandpaste.exam.participants.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
 @JacksonXmlRootElement(localName = "name")
 public class Name {
-	@JacksonXmlProperty(isAttribute = true)
-	private String name;
-
+	@JacksonXmlProperty(localName = "name", isAttribute = true)
+	private String nameVal;
 	@JacksonXmlProperty(isAttribute = true)
 	private String language;
 
-	public String getName() {
-		return name;
+	public String getNameVal() {
+		return nameVal;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNameVal(String nameVal) {
+		this.nameVal = nameVal;
 	}
 
 	public String getLanguage() {

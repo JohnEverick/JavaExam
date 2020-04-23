@@ -1,4 +1,4 @@
-package com.copyandpaste.exam.participants;
+package com.copyandpaste.exam.participants.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
